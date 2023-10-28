@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Saya | Happy Cats</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Mengimpor Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/mycss.css" />
+    <!-- <link rel="stylesheet" href="css/profil.css" /> -->
+
+    <!-- Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body style="background-color: #f1a661">
+    <!-- navbar start -->
+    <div class="my-header shadow-sm">
+      <a href="home.html" class="my-logo">
+        <img src="assets/img/logo.png" alt="Logo" width="80px" />
+      </a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="burger-menu">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="my-navbar">
+        <a href="index.html" style="--i: 0">Beranda</a>
+        <a href="adopsi-kucing.html" style="--i: 1">Adopsi</a>
+        <a href="donasi.html" style="--i: 2">Donasi</a>
+        <a href="edukasi.html" style="--i: 3">Edukasi</a>
+        <a href="tentang-kami.html" style="--i: 4">Tentang Kami</a>
+
+        <!-- Button After Login -->
+        <a style="--i: 5" class="prof-dropdown">
+          <button class="prof-dropdown-btn" onclick="toggle()">
+            <img class="prof-img" src="assets/img/profile.jpg" alt="" />
+            Kubeko
+            <i class="fa-solid fa-angle-down"></i>
+            <!-- Dropdown Profile After Login -->
+            <ul class="prof-droplist">
+              <li class="prof-droplist-item">
+                <a href="profil-saya.html">
+                  <i class="fa-regular fa-user"></i>
+                  Profil Saya
+                </a>
+              </li>
+              <li class="prof-droplist-item">
+                <a href="index.html">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Keluar
+                </a>
+              </li>
+            </ul>
+          </button>
+        </a>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- SECTION ACCOUNT SETTING START -->
+    <section id="my-profile">
+      <section class="card" style="background-color: #ffd8a9">
+        <h1>Akun saya</h1>
+        <div class="row">
+          <form action="">
+            <label for="nama">Nama</label><br />
+            <input type="text" id="nama" name="nama" value="Felicia" /><br />
+            <label for="uname">Username</label><br />
+            <input
+              type="text"
+              id="uname"
+              name="uname"
+              value="feliciaa01"
+            /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              value="flciaangel@gmail.com"
+            /><br />
+            <label for="alamat">Alamat</label><br />
+            <textarea id="alamat" name="alamat">
+  Jl. Bungur No.23 Cipedes Sukajadi Bandung Barat Jawa Barat 14536</textarea
+            ><br />
+            <input type="submit" value="Simpan" />
+          </form>
+        </div>
+        <!-- <div class="card-img">
+          <img src="assets/user.png" alt="About Me" />
+          <button type="submit" class="btn">Unggah Foto</button>
+        </div> -->
+      </section>
+      <!-- SECTION ACCOUNT SETTING END -->
+
+      <div class="card-img">
+        <img src="assets/img/profile.jpg" width="250px" /> <br />
+        <button type="submit" class="btn">Unggah Foto</button>
+      </div>
+
+      <!-- SECTION REGISTRASI START -->
+      <section class="form" style="background-color: #ffd8a9"></section>
+      <!-- SECTION REGISTRASI END -->
+    </section>
+
+    <!-- Footer -->
+    <div class="footers">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="./assets/img/logo.png" alt="" />
+        </div>
+        <div class="footer-happycats">
+          <h3>Happy Cats</h3>
+          <hr />
+          <p>
+            Sebuah tempat hangat dan penuh kasih sayang <br />
+            bersatu untuk dapat memberikan perlindungan <br />
+            terhadap kucing-kucing tanpa tempat tinggal dan <br />
+            memberikan edukasi kepada para pecinta kucing <br />
+            dalam merawat kucing.
+          </p>
+        </div>
+        <div class="footer-hubungikami">
+          <h3>Hubungi Kami</h3>
+          <hr />
+          <h5>No.Telp/WhatsApp</h5>
+          <p>+6282100000023</p>
+          <h5>Email</h5>
+          <p>happycats@gmail.com</p>
+          <h5>Ikuti Kami</h5>
+          <div class="footer-icon">
+            <a href="#"
+              ><img
+                src="./assets/img/Facebook.png"
+                alt="gambarfacebook"
+                class="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/img/instagram.png"
+                alt="gambarfacebook"
+                class="instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/img/Twitter.png"
+                alt="gambarfacebook"
+                class="twitter"
+            /></a>
+          </div>
+        </div>
+        <div class="navigasi">
+          <h3>Navigasi</h3>
+          <hr />
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="adopsi-kucing.html">Adopsi</a></li>
+            <li><a href="donasi.html">Donasi</a></li>
+            <li><a href="edukasi.html">Edukasi</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="buat-postingan.html">Buat Postingan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-botton">
+        <h5>Copyright 2023 &copy; Happy Cats, All right Reserved</h5>
+      </div>
+    </div>
+
+    <!-- Mengimpor Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>
